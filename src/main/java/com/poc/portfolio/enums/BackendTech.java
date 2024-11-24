@@ -4,10 +4,9 @@ import lombok.Getter;
 
 @Getter
 public enum BackendTech {
-  JAVA("JAVA 17+", ExperienceLevel.PROFESSIONAL.name()), NODE("Node JS",
-      ExperienceLevel.INTERMEDIATE.name()), EXPRESS("Express JS", ExperienceLevel.INTERMEDIATE.name()), SPRING(
-          "Spring",
-          ExperienceLevel.PROFESSIONAL.name()), HELIDON("Helidon", ExperienceLevel.PROFESSIONAL.name());
+  JAVA("JAVA 8", ExperienceLevel.INTERMEDIATE.name()), SPRING("Spring",
+      ExperienceLevel.INTERMEDIATE.name()),SPRING_BOOT("Spring Boot",
+          ExperienceLevel.INTERMEDIATE.name()), PYTHON("Python", ExperienceLevel.BEGINNER.name());
 
   private final String technology;
   private final String experienceLevel;

@@ -56,7 +56,7 @@ public class PortfolioController {
     model.addAttribute("cloud", getCloudExperience());
     model.addAttribute("database", getDatabaseExperience());
     model.addAttribute("devops", getDevOpsExperience());
-    model.addAttribute("youtube", YOUTUBE_URL);
+ 
     model.addAttribute("banner", POC_BANNER_URL);
     model.addAttribute("linkedin", LINKEDIN_URL);
     model.addAttribute("mailtoemail", MAIL_TO_EMAIL);
@@ -90,14 +90,12 @@ public class PortfolioController {
   private static List<SocialMediaImgTag> getSocialMediaImgTagAttributes() {
     List<SocialMediaImgTag> imgTagList = new ArrayList<>();
 
-    imgTagList.add(SocialMediaImgTag.builder().assetUrl(YOUTUBE_ASSET_URL).altName("My YouTube profile")
-        .onClickAction(YOUTUBE_URL).build());
+    
     imgTagList.add(SocialMediaImgTag.builder().assetUrl(LINKEDIN_ASSET_URL).altName("My LinkedIn profile")
         .onClickAction(LINKEDIN_URL).build());
     imgTagList.add(SocialMediaImgTag.builder().assetUrl(GITHUB_ASSET_URL).altName("My Github profile")
         .onClickAction(GITHUB_URL).build());
-    imgTagList.add(SocialMediaImgTag.builder().assetUrl(LEETCODE_ASSET_URL).altName("My Leetcode profile")
-        .onClickAction(LEETCODE_URL).build());
+
 
     return imgTagList;
   }
