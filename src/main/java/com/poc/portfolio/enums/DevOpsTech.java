@@ -4,10 +4,8 @@ import lombok.Getter;
 
 @Getter
 public enum DevOpsTech {
-  DOCKER("Docker", ExperienceLevel.PROFESSIONAL.name()), JENKINS("Jenkins",
-      ExperienceLevel.PROFESSIONAL.name()), KUBERNETES("Kubernetes", ExperienceLevel.PROFESSIONAL
-          .name()), ELASTICSEARCH("ElasticSearch", ExperienceLevel.EXPERIENCED.name()), LIQUIBASE("Liquibase",
-              ExperienceLevel.PROFESSIONAL.name()), SPLUNK("Splunk", ExperienceLevel.EXPERIENCED.name());
+  SELENIUM("Selenium", ExperienceLevel.INTERMEDIATE.name()), DATA_ANALYSIS("Data Analysis", ExperienceLevel.INTERMEDIATE
+          .name());
 
   private final String technology;
   private final String experienceLevel;

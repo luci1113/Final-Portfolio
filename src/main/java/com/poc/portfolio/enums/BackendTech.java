@@ -6,7 +6,7 @@ import lombok.Getter;
 public enum BackendTech {
   JAVA("JAVA 8", ExperienceLevel.INTERMEDIATE.name()), SPRING("Spring",
       ExperienceLevel.INTERMEDIATE.name()),SPRING_BOOT("Spring Boot",
-          ExperienceLevel.INTERMEDIATE.name()), PYTHON("Python", ExperienceLevel.BEGINNER.name());
+          ExperienceLevel.INTERMEDIATE.name()), PYTHON("Python", ExperienceLevel.BEGINNER.name()), HIBERNATE("Hibernate", ExperienceLevel.BEGINNER.name());
 
   private final String technology;
   private final String experienceLevel;
@@ -14,6 +14,8 @@ public enum BackendTech {
   BackendTech(String technology, String experienceLevel) {
     this.technology = technology;
     this.experienceLevel = experienceLevel;
+    
+    
   }
 
 }
